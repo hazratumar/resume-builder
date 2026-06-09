@@ -4,10 +4,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && vite build",
-    "dev": "vite dev",
+    "build": "node init && rm -rf dist && vite build",
+    "dev": "node init && vite dev",
     "serve": "vite preview",
-    "start": "vite preview",
+    "start": "node init && vite preview",
     "typecheck": "tsgo --noEmit",
     "test": "vitest run --passWithNoTests",
     "test:coverage": "vitest run --coverage --passWithNoTests",

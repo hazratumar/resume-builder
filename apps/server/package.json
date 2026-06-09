@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsdown",
-    "start": "node dist/index.mjs",
+    "dev": "node init && tsx watch src/index.ts",
+    "build": "node init && tsdown",
+    "start": "node init && node dist/index.mjs",
     "typecheck": "tsgo --noEmit",
     "test": "vitest run --passWithNoTests",
     "test:coverage": "vitest run --coverage --passWithNoTests",
